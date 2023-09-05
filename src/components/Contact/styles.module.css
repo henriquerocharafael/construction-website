@@ -1,0 +1,90 @@
+.contact_info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35rem;
+  background: var(--white);
+  height: 100%;
+  text-align: center;
+  z-index: 1100;
+  padding: 0 2rem;
+  padding-top: 5rem;
+
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+  display: block;
+}
+
+.close_contact_info {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  font-size: 4rem;
+  color: var(--black);
+}
+
+.close_contact_info:hover {
+  transform: rotate(90deg);
+}
+
+.info {
+  padding: 2rem 0;
+}
+
+.info svg {
+  /* height: 2rem;
+  width: 2rem; */
+  padding: 1.5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: var(--light-bg);
+  color: var(--black);
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.info svg:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.info h3 {
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+
+.info p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 1.5;
+}
+
+.share {
+  padding-top: 2rem;
+  border-top: var(--border);
+  margin-top: 1rem;
+}
+
+.share svg {
+  padding: 1.5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: var(--light-bg);
+  color: var(--black);
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin: 0 0.3rem;
+}
+
+.share svg:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+p {
+  padding-top: 0;
+}
