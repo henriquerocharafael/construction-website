@@ -13,9 +13,7 @@ export function NavBar({ menuIsOpen }: MenuProps) {
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
-      <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
-      <a href="#blogs">Blogs</a>
     </nav>
   );
 }

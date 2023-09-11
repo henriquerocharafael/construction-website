@@ -16,14 +16,8 @@ export function Footer() {
         <a className={styles.btn} href="#projects">
           Projects
         </a>
-        <a className={styles.btn} href="#pricing">
-          Pricing
-        </a>
         <a className={styles.btn} href="#contact">
           Contact
-        </a>
-        <a className={styles.btn} href="#blogs">
-          Blogs
         </a>
       </div>
 

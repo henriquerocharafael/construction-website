@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -47,11 +46,6 @@ export function Header() {
     setSearchIsOpen(false);
   }
 
-  /*
-    TODO: Need to set (menuIsOpen, infoIsOpen, 
-    searchIsOpen, loginIsOpen) to false when window gets scrolled
-  */
-
   // This is'nt working on small screens
   // Don't know if this is the correct approach
   // in React to deal with window scroll
@@ -64,9 +58,9 @@ export function Header() {
 
   return (
     <header className={styles.header}>
-      <Link to="#" className={styles.logo}>
+      <a href="#home" className={styles.logo}>
         We<span>Build</span>
-      </Link>
+      </a>
 
       {/* Couldn't use ternary operator for component here because of screen size responsivity */}
       <NavBar menuIsOpen={menuIsOpen} />
@@ -81,14 +75,14 @@ export function Header() {
         <div className={styles.search_btn} onClick={toggleSearch}>
           <FontAwesomeIcon icon={faSearch} />
         </div>
-        <div className={styles.login_btn} onClick={toggleLogin}>
+        {/* <div className={styles.login_btn} onClick={toggleLogin}>
           <FontAwesomeIcon icon={faUser} />
-        </div>
+        </div> */}
       </div>
 
       {infoIsOpen && <Contact toggleInfo={toggleInfo} />}
       {searchIsOpen && <SearchForm />}
-      {loginIsOpen && <LoginForm />}
+      {/* {loginIsOpen && <LoginForm />} */}
     </header>
   );
 }
