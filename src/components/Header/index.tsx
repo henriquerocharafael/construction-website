@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { NavBar } from "./NavBar";
 import { SearchForm } from "./SearchForm";
-import { LoginForm } from "./LoginForm";
+//import { LoginForm } from "./LoginForm";
 import { Contact } from "../Contact";
 
 import styles from "./styles.module.css";
@@ -12,39 +12,39 @@ import {
   faBars,
   faInfoCircle,
   faSearch,
-  faUser,
+  //faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 export function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
   const [infoIsOpen, setInfoIsOpen] = useState<boolean>(false);
   const [searchIsOpen, setSearchIsOpen] = useState<boolean>(false);
-  const [loginIsOpen, setLoginIsOpen] = useState<boolean>(false);
+  //const [loginIsOpen, setLoginIsOpen] = useState<boolean>(false);
 
   function toggleMenu() {
     setMenuIsOpen((menuIsOpen) => !menuIsOpen);
     setSearchIsOpen(false);
-    setLoginIsOpen(false);
+    //setLoginIsOpen(false);
   }
 
   function toggleInfo() {
     setInfoIsOpen((infoIsOpen) => !infoIsOpen);
     setMenuIsOpen(false);
     setSearchIsOpen(false);
-    setLoginIsOpen(false);
+    //setLoginIsOpen(false);
   }
 
   function toggleSearch() {
     setSearchIsOpen((searchIsOpen) => !searchIsOpen);
     setMenuIsOpen(false);
-    setLoginIsOpen(false);
+    //setLoginIsOpen(false);
   }
 
-  function toggleLogin() {
-    setLoginIsOpen((loginIsOpen) => !loginIsOpen);
-    setMenuIsOpen(false);
-    setSearchIsOpen(false);
-  }
+  //function toggleLogin() {
+  //  setLoginIsOpen((loginIsOpen) => !loginIsOpen);
+  //  setMenuIsOpen(false);
+  //  setSearchIsOpen(false);
+  //}
 
   // This is'nt working on small screens
   // Don't know if this is the correct approach
@@ -52,7 +52,7 @@ export function Header() {
   window.onscroll = () => {
     setMenuIsOpen(false);
     setSearchIsOpen(false);
-    setLoginIsOpen(false);
+    //setLoginIsOpen(false);
     setInfoIsOpen(false);
   };
 

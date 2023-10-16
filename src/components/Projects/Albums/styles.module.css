@@ -1,0 +1,14 @@
+.container {
+  padding: 2rem;
+}
+
+.img_card {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.img_card img {
+  width: 200px;
+  height: 200px;
+}
