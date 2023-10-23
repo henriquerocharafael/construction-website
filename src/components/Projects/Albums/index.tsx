@@ -7,9 +7,6 @@ import { useParams } from "react-router-dom";
 export function Album() {
   const { id } = useParams();
 
-  // this will return just the album with the same id as params id
-  // album.id === Number(id) && (return <img />)
-
   const [imageList, setImageList] = useState<string[]>([]);
   const imageListRef = ref(storage, `images/${id}`);
 
