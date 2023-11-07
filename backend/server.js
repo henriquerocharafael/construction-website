@@ -1,14 +1,14 @@
 const express = require("express");
 const cors = require("cors");
-const { json, urlencoded } = require("body-parser");
 
 const app = express();
 const nodemailer = require("nodemailer");
 
 const PORT = process.env.PORT || 4000;
 
-app.use(json());
-app.use(urlencoded({ extended: false }));
+require("dotenv").config();
+
+app.use(express.json());
 
 const corsOptions = {
   origin: "*",
@@ -18,14 +18,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.get("/", (request, response) => {
-  response.send("<h1>Hello from server.js</h1>");
-});
-
 app.post("/api", (request, response) => {
-  console.log("Got a request");
-  console.log(request.body.data);
-
   const data = request.body.data;
 
   response.json({
@@ -37,8 +30,8 @@ app.post("/api", (request, response) => {
     service: "gmail",
     auth: {
       type: "login",
-      user: "eaconstrucoes2019@gmail.com",
-      pass: "deydwihhhywwqdex",
+      user: process.env.SMTP_EMAIL,
+      pass: process.env.SMTP_PASSWORD,
     },
   });
 
