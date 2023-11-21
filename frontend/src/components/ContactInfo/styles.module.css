@@ -64,3 +64,14 @@
   background: var(--yellow);
   color: var(--black);
 }
+
+.error {
+  border-color: red !important;
+}
+
+.label {
+  font-size: inherit;
+  color: red;
+  cursor: initial;
+  margin: initial;
+}

@@ -1,30 +1,61 @@
-import { ChangeEvent, FormEvent, useState } from "react";
 import axios from "axios";
 import styles from "./styles.module.css";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import "yup-phone-lite";
+
+type FormValues = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+};
+
+const initialValues: FormValues = {
+  name: "",
+  email: "",
+  phone: "",
+  message: "",
+};
 
 export function ContactInfo() {
-  const [data, setData] = useState({});
+  const formik = useFormik({
+    initialValues: initialValues,
 
-  function handleChange(
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) {
-    setData({
-      ...data,
-      [e.currentTarget.name]: e.currentTarget.value,
-    });
-  }
+    validationSchema: Yup.object({
+      name: Yup.string()
+        .max(20, "Nome deve ter 20 caracteres ou menos.")
+        .required("Nome deve ser preenchido."),
+      email: Yup.string()
+        .email("Email inválido.")
+        .required("Email deve ser preenchido."),
+      phone: Yup.string()
+        .phone("BR", "Por favor insira um telefone válido.")
+        .required("Telefone deve ser preenchido."),
+      message: Yup.string().required("Mensagem deve ser preenchida."),
+    }),
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    axios
-      .post("http://localhost:4000/api", { data })
-      .then((response) => console.log(response))
-      .catch((err) => console.log(err));
-  }
+    onSubmit: (data, resetForm) => {
+      axios
+        .post("http://localhost:4000/api", { data })
+        .then((response) => console.log(response.statusText))
+        .catch((err) => console.log(err));
+
+      resetForm.setValues(initialValues);
+
+      // resets touched form after submiting
+      formik.touched.name = false;
+      formik.touched.email = false;
+      formik.touched.phone = false;
+      formik.touched.message = false;
+    },
+  });
 
   return (
     <section id="contact" className={styles.contact}>
-      <h1 className="heading">contact us</h1>
+      <h1 className="heading" style={{ textTransform: "none" }}>
+        Contate-nos
+      </h1>
       <div className={styles.row}>
         <iframe
           className={styles.map}
@@ -34,39 +65,80 @@ export function ContactInfo() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <form onSubmit={handleSubmit}>
-          <h3>get in touch</h3>
+        <form onSubmit={formik.handleSubmit}>
+          <h3>peça seu orçamento</h3>
+          <label className={styles.label} htmlFor="name">
+            {formik.touched.name && formik.errors.name
+              ? formik.errors.name
+              : ""}
+          </label>
           <input
             type="text"
+            id="name"
             name="name"
-            placeholder="name"
-            className={styles.box}
-            onChange={handleChange}
+            placeholder="nome"
+            value={formik.values.name}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            className={`${styles.box} ${
+              formik.touched.name && formik.errors.name ? styles.error : ""
+            }`}
           />
+          <label className={styles.label} htmlFor="email">
+            {formik.touched.email && formik.errors.email
+              ? formik.errors.email
+              : ""}
+          </label>
           <input
             type="email"
+            id="email"
             name="email"
             placeholder="email"
-            className={styles.box}
-            onChange={handleChange}
+            value={formik.values.email}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            className={`${styles.box} ${
+              formik.touched.email && formik.errors.email ? styles.error : ""
+            }`}
           />
+          <label className={styles.label} htmlFor="phone">
+            {formik.touched.phone && formik.errors.phone
+              ? formik.errors.phone
+              : ""}
+          </label>
           <input
-            type="number"
+            type="tel"
+            id="phone"
             name="phone"
-            placeholder="phone"
-            className={styles.box}
-            onChange={handleChange}
+            placeholder="telefone"
+            value={formik.values.phone}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            className={`${styles.box} ${
+              formik.touched.phone && formik.errors.phone ? styles.error : ""
+            }`}
           />
+          <label className={styles.label} htmlFor="message">
+            {formik.touched.message && formik.errors.message
+              ? formik.errors.message
+              : ""}
+          </label>
           <textarea
+            id="message"
             name="message"
-            placeholder="message"
-            id=""
+            placeholder="mensagem"
+            value={formik.values.message}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             cols={30}
             rows={10}
-            className={styles.box}
-            onChange={handleChange}
+            className={`${styles.box} ${
+              formik.touched.message && formik.errors.message
+                ? styles.error
+                : ""
+            }`}
           ></textarea>
-          <input type="submit" value="send message" className={styles.btn} />
+          <input type="submit" value="enviar" className={styles.btn} />
         </form>
       </div>
     </section>

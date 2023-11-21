@@ -1,14 +1,11 @@
 const express = require("express");
 const cors = require("cors");
-
-const app = express();
 const nodemailer = require("nodemailer");
-
-const PORT = process.env.PORT || 4000;
-
 require("dotenv").config();
 
-app.use(express.json());
+const app = express();
+
+const PORT = process.env.PORT || 4000;
 
 const corsOptions = {
   origin: "*",
@@ -16,6 +13,7 @@ const corsOptions = {
   optionSuccessStatus: 200,
 };
 
+app.use(express.json());
 app.use(cors(corsOptions));
 
 app.post("/api", (request, response) => {
@@ -25,6 +23,8 @@ app.post("/api", (request, response) => {
     status: "success",
     data: data,
   });
+
+  console.log(data);
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -38,7 +38,7 @@ app.post("/api", (request, response) => {
   const mailOptions = {
     from: data.email,
     to: "eaconstrucoes2019@gmail.com",
-    subject: `Email from ${data.email}, phone ${data.phone}`,
+    subject: `Email enviado por ${data.email}. Telefone ${data.phone}.`,
     text: data.message,
   };
 
