@@ -3,6 +3,8 @@ import styles from "./styles.module.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import "yup-phone-lite";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 type FormValues = {
   name: string;
@@ -17,6 +19,12 @@ const initialValues: FormValues = {
   phone: "",
   message: "",
 };
+
+function notify() {
+  toast.success("Sua mensagem foi enviada!", {
+    position: toast.POSITION.TOP_RIGHT,
+  });
+}
 
 export function ContactInfo() {
   const formik = useFormik({
@@ -48,6 +56,9 @@ export function ContactInfo() {
       formik.touched.email = false;
       formik.touched.phone = false;
       formik.touched.message = false;
+
+      // success message after form submitting
+      notify();
     },
   });
 
@@ -141,6 +152,8 @@ export function ContactInfo() {
           <input type="submit" value="enviar" className={styles.btn} />
         </form>
       </div>
+
+      <ToastContainer />
     </section>
   );
 }
