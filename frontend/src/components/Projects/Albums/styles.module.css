@@ -12,3 +12,24 @@
   width: 200px;
   height: 200px;
 }
+
+.footer {
+  text-align: center;
+  padding: 5rem 10%;
+}
+
+.credit {
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.credit span {
+  color: var(--yellow);
+}
+
+a {
+  color: inherit;
+}

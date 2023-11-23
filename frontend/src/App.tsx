@@ -1,23 +1,12 @@
-import { Header } from "./components/Header";
-import { Home } from "./components/Home";
-import { About } from "./components/About";
-import { Services } from "./components/Services";
-import { Reviews } from "./components/Reviews";
-import { ContactInfo } from "./components/ContactInfo";
-import { Footer } from "./components/Footer";
-import { Projects } from "./components/Projects";
+import { Route, Routes } from "react-router-dom";
+import { HomePage } from "./components/HomePage";
+import { Album } from "./components/Projects/Albums";
 
 export function App() {
   return (
-    <>
-      <Header />
-      <Home />
-      <About />
-      <Services />
-      <Projects />
-      <Reviews />
-      <ContactInfo />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="album/:id" element={<Album />} />
+    </Routes>
   );
 }

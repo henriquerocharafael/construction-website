@@ -22,7 +22,16 @@ export function Footer() {
       </div>
 
       <div className={styles.credit}>
-        created by <span>mr. web designer</span> | all rights reserved!
+        criado por{" "}
+        <span>
+          <a
+            href="https://www.linkedin.com/in/rafael-isid%C3%B3rio-aa48b1230/"
+            target="__blank"
+          >
+            Rafael Isidório
+          </a>
+        </span>{" "}
+        | todos direitos reservados!
       </div>
     </footer>
   );

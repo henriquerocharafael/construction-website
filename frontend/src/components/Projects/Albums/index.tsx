@@ -21,14 +21,31 @@ export function Album() {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <h1>Album {id}</h1>
+    <>
+      <div className={styles.container}>
+        <h1>Album {id}</h1>
 
-      {imageList.map((url, idx) => (
-        <div key={idx} className={styles.img_card}>
-          <img src={url} />
+        {imageList.map((url, idx) => (
+          <div key={idx} className={styles.img_card}>
+            <img src={url} />
+          </div>
+        ))}
+      </div>
+
+      <footer className={styles.footer}>
+        <div className={styles.credit}>
+          criado por{" "}
+          <span>
+            <a
+              href="https://www.linkedin.com/in/rafael-isid%C3%B3rio-aa48b1230/"
+              target="__blank"
+            >
+              Rafael Isidório
+            </a>
+          </span>{" "}
+          | todos direitos reservados!
         </div>
-      ))}
-    </div>
+      </footer>
+    </>
   );
 }
