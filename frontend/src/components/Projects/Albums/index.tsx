@@ -21,7 +21,7 @@ export function Album() {
   }, []);
 
   return (
-    <>
+    <div className={styles.album}>
       <Link to="/" className={styles.btn}>
         Home
       </Link>
@@ -48,6 +48,6 @@ export function Album() {
           | todos direitos reservados!
         </div>
       </footer>
-    </>
+    </div>
   );
 }
