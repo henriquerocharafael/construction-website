@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 import { getDownloadURL, listAll, ref } from "firebase/storage";
 import { storage } from "../../../firebase";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export function Album() {
   const { id } = useParams();
@@ -22,9 +22,11 @@ export function Album() {
 
   return (
     <>
-      <div className={styles.container}>
-        <h1>Album {id}</h1>
+      <Link to="/" className={styles.btn}>
+        Home
+      </Link>
 
+      <div className={styles.gallery}>
         {imageList.map((url, idx) => (
           <div key={idx} className={styles.img_card}>
             <img src={url} />
