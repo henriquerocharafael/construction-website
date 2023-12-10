@@ -4,6 +4,14 @@ import { getDownloadURL, listAll, ref } from "firebase/storage";
 import { storage } from "../../../firebase";
 import { Link, useParams } from "react-router-dom";
 
+import LightGallery from "lightgallery/react";
+// import styles
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+import lgZoom from "lightgallery/plugins/zoom";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+
 export function Album() {
   const { id } = useParams();
 
@@ -27,11 +35,15 @@ export function Album() {
       </Link>
 
       <div className={styles.gallery}>
-        {imageList.map((url, idx) => (
-          <div key={idx} className={styles.img_card}>
-            <img src={url} />
-          </div>
-        ))}
+        <LightGallery plugins={[lgZoom, lgThumbnail]} mode="lg-fade">
+          {imageList.map((url, idx) => (
+            <div key={idx} className={styles.img_card}>
+              <Link to="#" key={idx}>
+                <img src={url} />
+              </Link>
+            </div>
+          ))}
+        </LightGallery>
       </div>
 
       <footer className={styles.footer}>
