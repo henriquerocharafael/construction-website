@@ -8,7 +8,7 @@ import obraVideo from "../../assets/videos/obra-video.mp4";
 export function About() {
   return (
     <section id="about" className={styles.about}>
-      <h1 className="heading">About Us</h1>
+      <h1 className="heading">sobre nós</h1>
 
       <div className={styles.row}>
         <div className={styles.video}>
@@ -23,7 +23,7 @@ export function About() {
             odit praesentium, vero impedit.
           </p>
           <Link to="#services" className={styles.btn}>
-            read more
+            Leia mais
           </Link>
         </div>
       </div>

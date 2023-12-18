@@ -1,7 +1,7 @@
 import { About } from "../About";
 import { Services } from "../Services";
 import { Projects } from "../Projects";
-import { Reviews } from "../Reviews";
+// import { Reviews } from "../Reviews";
 import { ContactInfo } from "../ContactInfo";
 import { Home } from "../Home";
 import { Header } from "../Header";
@@ -15,7 +15,7 @@ export function HomePage() {
       <About />
       <Services />
       <Projects />
-      <Reviews />
+      {/* <Reviews /> */}
       <ContactInfo />
       <Footer />
     </>

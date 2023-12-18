@@ -1,18 +1,18 @@
 export const boxDiv = [
   {
-    title: "10+",
-    content: "years of experience",
+    title: "5+",
+    content: "anos no mercado",
   },
   {
-    title: "1500+",
-    content: "project completed",
+    title: "15+",
+    content: "projetos concluídos",
   },
   {
-    title: "790+",
-    content: "satiesfied clients",
+    title: "50+",
+    content: "clientes satisfeitos",
   },
   {
-    title: "450+",
-    content: "active workers",
+    title: "50+",
+    content: "trabalhadores ativos",
   },
 ];

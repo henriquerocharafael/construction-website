@@ -37,7 +37,7 @@ export function Home() {
                   <h3 className={styles.heading}>{slide.title}</h3>
                   <p>{slide.text}</p>
                   <Link to="#about" className={styles.btn}>
-                    get started
+                    vamos começar
                   </Link>
                 </div>
               </section>

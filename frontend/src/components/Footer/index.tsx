@@ -5,19 +5,19 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={styles.links}>
         <a className={styles.btn} href="#home">
-          Home
+          início
         </a>
         <a className={styles.btn} href="#about">
-          About
+          Sobre
         </a>
         <a className={styles.btn} href="#services">
-          Services
+          Serviços
         </a>
         <a className={styles.btn} href="#projects">
-          Projects
+          Projetos
         </a>
         <a className={styles.btn} href="#contact">
-          Contact
+          contato
         </a>
       </div>
 

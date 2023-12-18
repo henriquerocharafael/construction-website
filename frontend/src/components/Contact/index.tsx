@@ -22,7 +22,7 @@ interface ContactProps {
 
 export function Contact({ toggleInfo }: ContactProps) {
   return (
-    <div className={`${styles.contact_info} ${styles.active}`}>
+    <div className={`${styles.contact_info}`}>
       <div className={styles.close_contact_info} onClick={toggleInfo}>
         <FontAwesomeIcon icon={faTimes} />
       </div>
@@ -31,26 +31,24 @@ export function Contact({ toggleInfo }: ContactProps) {
         <div>
           <FontAwesomeIcon icon={faPhone} />
         </div>
-        <h3>phone number</h3>
-        <p>+123-456-7890</p>
-        <p>+111-222-3333</p>
+        <h3>Contato</h3>
+        <p>(19) 98821-7004</p>
       </div>
 
       <div className={styles.info}>
         <div>
           <FontAwesomeIcon icon={faEnvelope} />
         </div>
-        <h3>email address</h3>
-        <p>shaikhanas@gmail.com</p>
-        <p>anasbhai@gmail.com</p>
+        <h3>email</h3>
+        <p>eaconstrucoes2019@gmail.com</p>
       </div>
 
       <div className={styles.info}>
         <div>
           <FontAwesomeIcon icon={faMapMarkerAlt} />
         </div>
-        <h3>office address</h3>
-        <p>mumbai, india - 400104</p>
+        <h3>Escritório</h3>
+        <p>Campinas, SP - 13056400</p>
       </div>
 
       <div className={styles.share}>
@@ -60,7 +58,7 @@ export function Contact({ toggleInfo }: ContactProps) {
         <Link to="#">
           <FontAwesomeIcon icon={faTwitter} />
         </Link>
-        <Link to="#">
+        <Link to="https://www.instagram.com/eaconstrucoes_/" target="_blank">
           <FontAwesomeIcon icon={faInstagram} />
         </Link>
         <Link to="#">

@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export function Projects() {
   return (
     <section id="projects" className={styles.projects}>
-      <h1 className="heading">our projects</h1>
+      <h1 className="heading">nossos projetos</h1>
 
       <div className={styles.box_container}>
         {boxDiv.map((box, idx) => (

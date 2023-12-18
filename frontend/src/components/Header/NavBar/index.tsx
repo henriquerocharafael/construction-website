@@ -9,11 +9,11 @@ export function NavBar({ menuIsOpen }: MenuProps) {
     <nav
       className={`${styles.navbar} ${menuIsOpen == true ? styles.active : ""}`}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#home">Início</a>
+      <a href="#about">Sobre</a>
+      <a href="#services">Serviços</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
     </nav>
   );
 }

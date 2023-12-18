@@ -1,9 +1,9 @@
 .contact {
-  background: var(--black);
+  background: var(--light-bg);
 }
 
 .contact h1 {
-  color: var(--white);
+  color: var(--black);
 }
 
 .row {
