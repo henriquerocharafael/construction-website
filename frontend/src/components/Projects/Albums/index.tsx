@@ -5,10 +5,13 @@ import { storage } from "../../../firebase";
 import { Link, useParams } from "react-router-dom";
 
 import LightGallery from "lightgallery/react";
+
 // import styles
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+
+// import plugins
 import lgZoom from "lightgallery/plugins/zoom";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 
@@ -31,13 +34,13 @@ export function Album() {
   return (
     <div className={styles.album}>
       <Link to="/" className={styles.btn}>
-        Home
+        página inicial
       </Link>
 
       <div className={styles.gallery}>
         <LightGallery plugins={[lgZoom, lgThumbnail]} mode="lg-fade">
           {imageList.map((url, idx) => (
-            <div key={idx} className={styles.img_card}>
+            <div key={idx} data-src={url} className={styles.img_card}>
               <Link to="#" key={idx}>
                 <img src={url} />
               </Link>
