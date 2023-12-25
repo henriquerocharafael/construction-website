@@ -10,7 +10,7 @@ export function SearchForm() {
         <input
           type="search"
           name=""
-          placeholder="search here..."
+          placeholder="pesquisar..."
           id="search-box"
         />
         <label htmlFor="search-box">

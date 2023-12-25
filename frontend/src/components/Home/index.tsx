@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import styles from "./styles.module.css";
 
 // Import Swiper React components
@@ -36,9 +34,9 @@ export function Home() {
                 <div className={styles.content}>
                   <h3 className={styles.heading}>{slide.title}</h3>
                   <p>{slide.text}</p>
-                  <Link to="#about" className={styles.btn}>
+                  <a href="#about" className={styles.btn}>
                     vamos começar
-                  </Link>
+                  </a>
                 </div>
               </section>
             </SwiperSlide>

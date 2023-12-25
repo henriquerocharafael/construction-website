@@ -1,8 +1,5 @@
-import { Link } from "react-router-dom";
 import { boxDiv } from "./data";
-
 import styles from "./styles.module.css";
-
 import obraVideo from "../../assets/videos/obra-video.mp4";
 
 export function About() {
@@ -16,15 +13,15 @@ export function About() {
         </div>
 
         <div className={styles.content}>
-          <h3>We will provide you the best work which you dreamt for!</h3>
+          <h3>oferecemos o melhor serviço, do básico ao acabamento</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-            architecto assumenda accusantium optio maiores corporis voluptatem
-            odit praesentium, vero impedit.
+            Nossa empresa possui mais de 5 anos de atuação do ramo da construção
+            civil, período esse em que deixamos muitos clientes satisfeitos pelo
+            caminho.
           </p>
-          <Link to="#services" className={styles.btn}>
+          <a href="#services" className={styles.btn}>
             Leia mais
-          </Link>
+          </a>
         </div>
       </div>
 
