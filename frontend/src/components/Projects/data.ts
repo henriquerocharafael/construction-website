@@ -1,15 +1,15 @@
 export const boxDiv = [
   {
     id: 1,
-    img: "../../src/assets/images/project-1.jpg",
-    title: "dream home",
-    content: "construction, design",
+    img: "../../src/assets/images/bom-pastor-capa.jpg",
+    title: "Funerária Bom Pastor",
+    content: "Construção",
   },
   {
     id: 2,
-    img: "../../src/assets/images/project-2.jpg",
-    title: "dream home",
-    content: "construction, design",
+    img: "../../src/assets/images/sousas-capa.jpeg",
+    title: "Residencia Unifamiliar",
+    content: "Construção",
   },
   {
     id: 3,
