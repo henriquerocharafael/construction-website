@@ -1,0 +1,71 @@
+.pricing {
+  background: var(--light-bg);
+}
+
+.box_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--white);
+  padding: 2rem;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+}
+
+.icon {
+  font-size: 3rem;
+  height: 7rem;
+  width: 7rem;
+  line-height: 7rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.box h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.price {
+  padding: 1rem 0;
+  font-size: 5rem;
+}
+
+.price span {
+  font-size: 2rem;
+}
+
+.list {
+  padding: 1rem 0;
+}
+
+.list p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+.btn:hover {
+  background: var(--yellow);
+  color: var(--black);
+}

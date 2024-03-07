@@ -1,0 +1,43 @@
+.slide p {
+  padding: 1.5rem;
+  background: var(--light-bg);
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.slide p::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  background: var(--light-bg);
+  transform: rotate(45deg);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user img {
+  height: 7rem;
+  width: 7rem;
+}
+
+.user h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.stars {
+  padding-top: 0.5rem;
+}
+
+.star {
+  font-size: 1.4rem;
+  color: var(--yellow);
+}

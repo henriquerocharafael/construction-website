@@ -1,0 +1,151 @@
+/* Mixin SCSS examples */
+
+/* 
+  @mixin grid($val) {
+    display: grid;
+    grid-template-colums: repeat(auto-fit, minmax($val, 1fr));
+  }
+
+  @mixin titleText($titleSize) {
+    font-size: $titleSize;
+    color: var(--black);
+    text-transform: capitalize;
+  }
+
+  @mixin graphText($graphSize) {
+    font-size: $graphSize;
+    color: var(--light-color);
+    line-height: 1.5;
+  }
+
+  @mixin iconsBox() {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--light-bg);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+      background: var(--black);
+      color: var(--white);
+    }
+  }
+*/
+
+:root {
+  --yellow: #f5bf23;
+  --black: #111;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.heading {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding-left: 1rem;
+  border-left: 1rem solid var(--yellow);
+}
+
+/* Swipper Container Projects Section */
+.lg-react-element {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+}
+
+/* Swipper Buttons Home Section */
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  top: initial;
+  bottom: 0;
+  left: initial;
+  right: 0;
+  height: 7rem;
+  width: 7rem;
+  line-height: 7rem;
+  background-color: var(--white);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: var(--yellow);
+}
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.mySwiper .swiper-button-prev {
+  right: 7rem;
+}
+
+/* Responsivity */
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
