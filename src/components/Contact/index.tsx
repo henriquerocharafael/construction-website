@@ -52,7 +52,7 @@ export function Contact({ toggleInfo }: ContactProps) {
       </div>
 
       <div className={styles.share}>
-        <Link to="#">
+        <Link to="https://www.facebook.com/veterinaria.xandaine" target="_blank">
           <FontAwesomeIcon icon={faFacebookF} />
         </Link>
         <Link to="#">

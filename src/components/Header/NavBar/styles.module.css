@@ -12,7 +12,7 @@
 }
 
 .navbar a:hover {
-  color: var(--yellow);
+  color: var(--light-green);
 }
 
 @media (max-width: 991px) {

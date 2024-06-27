@@ -70,7 +70,7 @@ export function ContactInfo() {
       <div className={styles.row}>
         <iframe
           className={styles.map}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1836.654998740833!2d-47.142221961501065!3d-22.975625425367408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b620292da16f%3A0xba9f3e5a16c28933!2sR.%20Guarani%20Futebol%20Clube%20-%20Dic%20I%20(Conjunto%20Hab.%20Monsenhor%20Luiz%20Fernando%20Abreu)%2C%20Campinas%20-%20SP%2C%2013056-400!5e0!3m2!1spt-BR!2sbr!4v1693312708009!5m2!1spt-BR!2sbr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38134.78934581081!2d-47.150850528121616!3d-22.975041219080058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c9e7b6844673%3A0xb7e03f620827d90c!2sCl%C3%ADnica%20veterin%C3%A1ria%20Xandaine%20-%2024%20Horas%20-%20Ouro%20verde%20-%20DIC!5e0!3m2!1spt-BR!2sbr!4v1719489159813!5m2!1spt-BR!2sbr"
           allowFullScreen={undefined}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

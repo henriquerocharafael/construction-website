@@ -1,6 +1,7 @@
 import { boxDiv } from "./data";
 import styles from "./styles.module.css";
-import obraVideo from "../../assets/videos/obra-video.mp4";
+// import obraVideo from "../../assets/videos/obra-video.mp4";
+import vetCare from "../../assets/videos/vetcare.mp4";
 
 export function About() {
   return (
@@ -9,7 +10,7 @@ export function About() {
 
       <div className={styles.row}>
         <div className={styles.video}>
-          <video src={obraVideo} loop muted autoPlay></video>
+          <video src={vetCare} loop muted autoPlay></video>
         </div>
 
         <div className={styles.content}>

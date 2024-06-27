@@ -11,6 +11,7 @@
 
 video {
   width: 100%;
+  border-radius: 20px;
 }
 
 .content {
@@ -32,6 +33,7 @@ video {
 
 .btn {
   display: inline-block;
+  border-radius: 20px;
   margin-top: 1rem;
   padding: 1rem 3rem;
   background: var(--black);
@@ -43,8 +45,8 @@ video {
 }
 
 .btn:hover {
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--light-green);
+  color: var(--white);
 }
 
 .box_container {
@@ -58,6 +60,7 @@ video {
   text-align: center;
   background: var(--light-bg);
   padding: 3rem 2rem;
+  border-radius: 20px;
 }
 
 .box h3 {

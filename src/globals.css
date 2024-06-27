@@ -1,42 +1,5 @@
-/* Mixin SCSS examples */
-
-/* 
-  @mixin grid($val) {
-    display: grid;
-    grid-template-colums: repeat(auto-fit, minmax($val, 1fr));
-  }
-
-  @mixin titleText($titleSize) {
-    font-size: $titleSize;
-    color: var(--black);
-    text-transform: capitalize;
-  }
-
-  @mixin graphText($graphSize) {
-    font-size: $graphSize;
-    color: var(--light-color);
-    line-height: 1.5;
-  }
-
-  @mixin iconsBox() {
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    background: var(--light-bg);
-    color: var(--black);
-    cursor: pointer;
-    text-align: center;
-
-    &:hover {
-      background: var(--black);
-      color: var(--white);
-    }
-  }
-*/
-
 :root {
-  --yellow: #f5bf23;
+  --light-green: #77c6a6;
   --black: #111;
   --white: #fff;
   --light-color: #666;
@@ -76,7 +39,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--yellow);
+  background: var(--light-green);
 }
 
 section {
@@ -89,7 +52,7 @@ section {
   color: var(--black);
   text-transform: capitalize;
   padding-left: 1rem;
-  border-left: 1rem solid var(--yellow);
+  border-left: 1rem solid var(--light-green);
 }
 
 /* Swipper Container Projects Section */
@@ -114,7 +77,13 @@ section {
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: var(--yellow);
+  background-color: var(--light-green);
+}
+
+.mySwiper .swiper-button-prev:hover:after,
+.mySwiper .swiper-button-next:hover:after {
+  font-size: 2rem;
+  color: var(--white);
 }
 
 .mySwiper .swiper-button-prev::after,

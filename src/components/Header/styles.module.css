@@ -19,8 +19,13 @@
 }
 
 .logo span {
-  color: var(--yellow);
+  color: var(--light-green);
 }
+
+/* .logo img {
+  width: 100px;
+  height: 100px;
+} */
 
 .icons {
   display: flex;
@@ -31,6 +36,7 @@
 .icons div {
   height: 5rem;
   width: 5rem;
+  border-radius: 20px;
   line-height: 5rem;
   font-size: 2rem;
   background: var(--light-bg);
@@ -40,7 +46,7 @@
 }
 
 .icons div:hover {
-  background: var(--black);
+  background: var(--light-green);
   color: var(--white);
 }
 

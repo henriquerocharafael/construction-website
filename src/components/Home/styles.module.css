@@ -41,6 +41,7 @@ h3 {
 
 .btn {
   display: inline-block;
+  border-radius: 20px;
   margin-top: 1rem;
   padding: 1rem 3rem;
   background: var(--black);
@@ -52,8 +53,8 @@ h3 {
 }
 
 .btn:hover {
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--light-green);
+  color: var(--white);
 }
 
 @media (max-width: 768px) {

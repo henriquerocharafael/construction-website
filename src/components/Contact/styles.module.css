@@ -35,6 +35,7 @@
   /* height: 2rem;
   width: 2rem; */
   padding: 1.5rem;
+  border-radius: 20px;
   line-height: 5rem;
   font-size: 2rem;
   background: var(--light-bg);
@@ -45,7 +46,7 @@
 }
 
 .info svg:hover {
-  background: var(--black);
+  background: var(--light-green);
   color: var(--white);
 }
 
@@ -81,7 +82,7 @@
 }
 
 .share svg:hover {
-  background: var(--black);
+  background: var(--light-green);
   color: var(--white);
 }
 

@@ -15,12 +15,14 @@
 .map {
   flex: 1 1 41rem;
   width: 100%;
+  border-radius: 20px;
 }
 
 .row form {
   flex: 1 1 41rem;
   background: var(--white);
   padding: 2rem;
+  border-radius: 20px;
 }
 
 .row form h3 {
@@ -38,7 +40,7 @@
 }
 
 .row form .box:focus {
-  border-color: var(--yellow);
+  border-color: var(--light-green);
 }
 
 .row form textarea {
@@ -49,6 +51,7 @@
 
 .btn {
   width: auto;
+  border-radius: 20px;
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
@@ -61,8 +64,8 @@
 }
 
 .btn:hover {
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--light-green);
+  color: var(--white);
 }
 
 .error {

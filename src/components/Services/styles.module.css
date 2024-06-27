@@ -12,6 +12,7 @@
 .box {
   text-align: center;
   padding: 3rem;
+  border-radius: 20px;
   background: var(--white);
   box-shadow: var(--box-shadow);
   border: var(--border);

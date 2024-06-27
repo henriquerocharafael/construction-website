@@ -5,6 +5,7 @@
 
 .btn {
   display: inline-block;
+  border-radius: 20px;
   margin: 0.5rem;
   padding: 1rem 3rem;
   background: var(--black);
@@ -16,8 +17,8 @@
 }
 
 .btn:hover {
-  background: var(--yellow);
-  color: var(--black);
+  background: var(--light-green);
+  color: var(--white);
 }
 
 .credit {
@@ -29,5 +30,5 @@
 }
 
 .credit span {
-  color: var(--yellow);
+  color: var(--light-green);
 }

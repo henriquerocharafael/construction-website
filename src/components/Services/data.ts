@@ -1,11 +1,11 @@
 export const boxDiv = [
   {
-    img: "/services-1.png",
+    img: "../../src/assets/images/crossvet.svg",
     title: "construção",
     content: "Serviço de construção desde o zero.",
   },
   {
-    img: "/services-2.png",
+    img: "../../src/assets/images/housevet.svg",
     title: "reforma",
     content: "Serviço de reforma de casa e apartamento.",
   },
@@ -24,7 +24,7 @@ export const boxDiv = [
   //     "Lorem Ipsum is simply dummy text of the printing and typesetting.",
   // },
   {
-    img: "/services-5.png",
+    img: "../../src/assets/images/manvet.svg",
     title: "Projetos",
     content: "Projeto arquitetonico e estrutural.",
   },
@@ -35,7 +35,7 @@ export const boxDiv = [
   //     "Lorem Ipsum is simply dummy text of the printing and typesetting.",
   // },
   {
-    img: "/services-7.png",
+    img: "../../src/assets/images/womenvet.svg",
     title: "Manutenção",
     content: "Serviço de manutenção em prédios e casas.",
   },

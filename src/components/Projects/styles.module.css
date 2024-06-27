@@ -1,9 +1,9 @@
 .projects {
-  background: var(--black);
+  background: var(--white);
 }
 
 .projects h1 {
-  color: var(--white);
+  color: var(--black);
 }
 
 .box_container {
@@ -16,11 +16,14 @@
 
 .box {
   cursor: initial;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
 }
 
 .image {
   height: 40rem;
   overflow: hidden;
+  border-radius: 20px 20px 0 0;
 }
 
 .image img {
@@ -39,6 +42,7 @@
   gap: 0.5rem;
   background: var(--white);
   justify-content: space-between;
+  border-radius: 0 0 20px 20px;
 }
 
 .icon {
@@ -47,9 +51,10 @@
   align-items: center;
   width: 7.5rem;
   font-size: 3rem;
-  background: var(--yellow);
+  background: var(--light-green);
   color: var(--white);
   cursor: pointer;
+  border-radius: 0 0 20px 0;
 }
 
 .info {
