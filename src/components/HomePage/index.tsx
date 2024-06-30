@@ -5,6 +5,7 @@ import { ContactInfo } from "../ContactInfo";
 import { Home } from "../Home";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
+import { Reviews } from "../Reviews";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <About />
       <Services />
       <Projects />
+      <Reviews />
       <ContactInfo />
       <Footer />
     </>

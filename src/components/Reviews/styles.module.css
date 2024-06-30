@@ -1,5 +1,19 @@
+.reviews {
+  background-color: var(--light-green);
+}
+
+.heading {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding-left: 1rem;
+  border-left: 1rem solid var(--light-bg);
+}
+
 .slide p {
   padding: 1.5rem;
+  border-radius: 20px;
   background: var(--light-bg);
   position: relative;
   margin-bottom: 3rem;
@@ -26,6 +40,7 @@
 .user img {
   height: 7rem;
   width: 7rem;
+  border-radius: 20px;
 }
 
 .user h3 {

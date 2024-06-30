@@ -24,7 +24,7 @@ export function Reviews() {
 
   return (
     <section className={styles.reviews}>
-      <h1 className="heading">clients reviews</h1>
+      <h1 className={styles.heading}>clients reviews</h1>
       <div className={styles.reviews_slider}>
         <Swiper
           slidesPerView={1}
