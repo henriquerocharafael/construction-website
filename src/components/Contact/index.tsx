@@ -8,7 +8,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./styles.module.css";
-import { Link } from "react-router-dom";
 import {
   faFacebookF,
   faInstagram,
@@ -52,18 +51,18 @@ export function Contact({ toggleInfo }: ContactProps) {
       </div>
 
       <div className={styles.share}>
-        <Link to="https://www.facebook.com/veterinaria.xandaine" target="_blank">
+        <a href="https://www.facebook.com/veterinaria.xandaine" target="_blank">
           <FontAwesomeIcon icon={faFacebookF} />
-        </Link>
-        <Link to="#">
+        </a>
+        <a href="#">
           <FontAwesomeIcon icon={faTwitter} />
-        </Link>
-        <Link to="https://www.instagram.com/eaconstrucoes_/" target="_blank">
+        </a>
+        <a href="https://www.instagram.com/eaconstrucoes_/" target="_blank">
           <FontAwesomeIcon icon={faInstagram} />
-        </Link>
-        <Link to="#">
+        </a>
+        <a href="#">
           <FontAwesomeIcon icon={faLinkedin} />
-        </Link>
+        </a>
       </div>
     </div>
   );

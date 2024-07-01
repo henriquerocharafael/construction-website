@@ -3,7 +3,6 @@ import logo from "../../assets/images/logo-topo.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -14,12 +13,12 @@ export function Footer() {
           <p>clinicaxandaine@gmail.com</p>
 
           <div>
-            <Link to="#">
+            <a href="#">
               <FontAwesomeIcon icon={faFacebookF} />
-            </Link>
-            <Link to="#">
+            </a>
+            <a href="#">
               <FontAwesomeIcon icon={faInstagram} />
-            </Link>
+            </a>
           </div>
         </div>
         <div className={styles.logo}>

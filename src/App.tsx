@@ -1,16 +1,29 @@
-import { lazy, Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+// import { lazy, Suspense } from "react";
+// import { Route, Routes } from "react-router-dom";
 
-const Album = lazy(() => import("./components/Projects/Albums"));
-const HomePage = lazy(() => import("./components/HomePage"));
+import { About } from "./components/About";
+import { ContactForm } from "./components/ContactForm";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { Home } from "./components/Home";
+import { Projects } from "./components/Projects";
+import { Reviews } from "./components/Reviews";
+import { Services } from "./components/Services";
+
+// const Album = lazy(() => import("./components/Projects/Albums"));
+// const HomePage = lazy(() => import("./components/HomePage"));
 
 export function App() {
   return (
-    <Suspense fallback={<h1>Carregando...</h1>}>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="album/:id" element={<Album />} />
-      </Routes>
-    </Suspense>
+    <>
+      <Header />
+      <Home />
+      <About />
+      <Services />
+      <Projects />
+      <Reviews />
+      <ContactForm />
+      <Footer />
+    </>
   );
 }

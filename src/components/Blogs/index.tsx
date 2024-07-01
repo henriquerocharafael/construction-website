@@ -1,7 +1,5 @@
 import styles from "./styles.module.css";
 
-import { Link } from "react-router-dom";
-
 import { blogs } from "./data";
 
 // Import Swiper React components
@@ -35,9 +33,9 @@ export function Blogs() {
                 <div className={styles.content}>
                   <h3>{blog.title}</h3>
                   <p>{blog.content}</p>
-                  <Link to="#" className={styles.btn}>
+                  <a href="#" className={styles.btn}>
                     read more
-                  </Link>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>

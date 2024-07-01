@@ -5,16 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { boxDiv } from "./data";
 
-import { Link } from "react-router-dom";
-
 export function Projects() {
   return (
     <section id="projects" className={styles.projects}>
       <h1 className="heading">nossos projetos</h1>
 
       <div className={styles.box_container}>
-        {boxDiv.map((box, idx) => (
-          <Link key={idx} to={`/album/${box.id}`} className={styles.box}>
+        {boxDiv.map((box) => (
+          <a key={box.id}>
             <div className={styles.image}>
               <img src={box.img} />
             </div>
@@ -27,7 +25,7 @@ export function Projects() {
                 <FontAwesomeIcon icon={faPlus} />
               </div>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </section>

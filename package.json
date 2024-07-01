@@ -15,8 +15,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "axios": "^1.6.0",
-    "firebase": "^10.4.0",
     "formik": "^2.4.5",
     "lightgallery": "^2.7.1",
     "react": "^18.2.0",
