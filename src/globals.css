@@ -42,7 +42,8 @@ body::-webkit-scrollbar-thumb {
   background: var(--light-green);
 }
 
-section {
+section,
+footer {
   padding: 5rem 10%;
 }
 
@@ -62,48 +63,10 @@ section {
   gap: 1rem;
 }
 
-.swiper-pagination .swiper-pagination-bullet-active {
-  opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: var(--light-green);
-}
-
-/* Swipper Buttons Home Section */
-/* .mySwiper .swiper-button-prev, */
-/* .mySwiper .swiper-button-next { */
-/*   top: initial; */
-/*   bottom: 0; */
-/*   left: initial; */
-/*   right: 0; */
-/*   height: 7rem; */
-/*   width: 7rem; */
-/*   line-height: 7rem; */
-/*   background-color: var(--white); */
-/* } */
-/**/
-/* .swiper-button-prev:hover, */
-/* .swiper-button-next:hover { */
-/*   background-color: var(--light-green); */
-/* } */
-/**/
-/* .mySwiper .swiper-button-prev:hover:after, */
-/* .mySwiper .swiper-button-next:hover:after { */
-/*   font-size: 2rem; */
-/*   color: var(--white); */
-/* } */
-/**/
-/* .mySwiper .swiper-button-prev::after, */
-/* .mySwiper .swiper-button-next::after { */
-/*   font-size: 2rem; */
-/*   color: var(--black); */
-/* } */
-/**/
-/* .mySwiper .swiper-button-prev { */
-/*   right: 7rem; */
-/* } */
-/**/
 /* Responsivity */
 @media (max-width: 1200px) {
-  section {
+  section,
+  footer {
     padding: 3rem 5%;
   }
 }
@@ -113,7 +76,8 @@ section {
     font-size: 55%;
   }
 
-  section {
+  section,
+  footer {
     padding: 3rem 2rem;
   }
 }

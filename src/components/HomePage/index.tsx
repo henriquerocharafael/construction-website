@@ -1,7 +1,7 @@
 import { About } from "../About";
 import { Services } from "../Services";
 import { Projects } from "../Projects";
-import { ContactInfo } from "../ContactInfo";
+import { ContactForm } from "../ContactForm";
 import { Home } from "../Home";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
@@ -16,7 +16,7 @@ function HomePage() {
       <Services />
       <Projects />
       <Reviews />
-      <ContactInfo />
+      <ContactForm />
       <Footer />
     </>
   );

@@ -26,7 +26,7 @@ function notify() {
   });
 }
 
-export function ContactInfo() {
+export function ContactForm() {
   const formik = useFormik({
     initialValues: initialValues,
 
@@ -87,7 +87,7 @@ export function ContactInfo() {
             type="text"
             id="name"
             name="name"
-            placeholder="nome"
+            placeholder="Nome"
             value={formik.values.name}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -104,7 +104,7 @@ export function ContactInfo() {
             type="email"
             id="email"
             name="email"
-            placeholder="email"
+            placeholder="Email"
             value={formik.values.email}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -121,7 +121,7 @@ export function ContactInfo() {
             type="tel"
             id="phone"
             name="phone"
-            placeholder="telefone"
+            placeholder="Telefone"
             value={formik.values.phone}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -137,7 +137,7 @@ export function ContactInfo() {
           <textarea
             id="message"
             name="message"
-            placeholder="mensagem"
+            placeholder="Mensagem"
             value={formik.values.message}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}

@@ -13,7 +13,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 export function Reviews() {
   const profilePics: JSX.Element[] = [];
@@ -33,9 +33,6 @@ export function Reviews() {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -47,7 +44,7 @@ export function Reviews() {
               slidesPerView: 3,
             },
           }}
-          modules={[Pagination, Autoplay]}
+          modules={[Autoplay]}
           loop={true}
           grabCursor={true}
           className="mySwiper"

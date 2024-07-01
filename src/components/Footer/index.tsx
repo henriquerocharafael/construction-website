@@ -1,27 +1,37 @@
 import styles from "./styles.module.css";
+import logo from "../../assets/images/logo-topo.png";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.links}>
-        <a className={styles.btn} href="#home">
-          início
-        </a>
-        <a className={styles.btn} href="#about">
-          Sobre
-        </a>
-        <a className={styles.btn} href="#services">
-          Serviços
-        </a>
-        <a className={styles.btn} href="#projects">
-          Projetos
-        </a>
-        <a className={styles.btn} href="#contact">
-          contato
-        </a>
+    <footer>
+      <div className={styles.footer}>
+        <div className={styles.contact}>
+          <h2>contato</h2>
+          <p>clinicaxandaine@gmail.com</p>
+
+          <div>
+            <Link to="#">
+              <FontAwesomeIcon icon={faFacebookF} />
+            </Link>
+            <Link to="#">
+              <FontAwesomeIcon icon={faInstagram} />
+            </Link>
+          </div>
+        </div>
+        <div className={styles.logo}>
+          <img src={logo} />
+        </div>
+        <div className={styles.openingHours}>
+          <h2>funcionamento</h2>
+          <p>Aberto 24h para atender ao seu pet.</p>
+        </div>
       </div>
 
-      <div className={styles.credit}>
+      {/* <div className={styles.credit}>
         criado por{" "}
         <span>
           <a
@@ -32,7 +42,7 @@ export function Footer() {
           </a>
         </span>{" "}
         | todos direitos reservados!
-      </div>
+      </div> */}
     </footer>
   );
 }

@@ -17,6 +17,7 @@ export function Home() {
     <section id="home" className={styles.home}>
       <div className={styles.home_slider}>
         <Swiper
+          loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
