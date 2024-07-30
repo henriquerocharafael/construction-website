@@ -9,7 +9,9 @@ import { plans } from "./data";
 export function Pricing() {
   return (
     <section id="pricing" className={styles.pricing}>
-      <h1 className="heading">our pricing</h1>
+      <div className="heading">
+        <h1 className="title">our pricing</h1>
+      </div>
       <div className={styles.box_container}>
         {plans.map((plan, idx) => (
           <div key={idx} className={styles.box}>

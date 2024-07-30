@@ -6,6 +6,8 @@ import "yup-phone-lite";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import paw from "../../assets/images/paw.svg";
+
 type FormValues = {
   name: string;
   email: string;
@@ -64,9 +66,12 @@ export function ContactForm() {
 
   return (
     <section id="contact" className={styles.contact}>
-      <h1 className="heading" style={{ textTransform: "none" }}>
-        Contate-nos
-      </h1>
+      <div className="heading">
+        <img src={paw} />
+        <h1 className="title" style={{ textTransform: "none" }}>
+          Contate-nos
+        </h1>
+      </div>
       <div className={styles.row}>
         <iframe
           className={styles.map}

@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+import paw from "../../assets/images/paw.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -24,7 +25,10 @@ export function Reviews() {
 
   return (
     <section className={styles.reviews}>
-      <h1 className={styles.heading}>clients reviews</h1>
+      <div className="heading">
+        <img src={paw} />
+        <h1 className="title">depoimentos</h1>
+      </div>
       <div className={styles.reviews_slider}>
         <Swiper
           slidesPerView={1}

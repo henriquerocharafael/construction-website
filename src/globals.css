@@ -48,12 +48,22 @@ footer {
 }
 
 .heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
   margin-bottom: 3rem;
+}
+
+.heading img {
+  width: 45px;
+  height: 40px;
+}
+
+.title {
   font-size: 3rem;
   color: var(--black);
   text-transform: capitalize;
-  padding-left: 1rem;
-  border-left: 1rem solid var(--light-green);
 }
 
 /* Swipper Container Projects Section */

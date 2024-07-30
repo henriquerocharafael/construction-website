@@ -12,7 +12,9 @@ import "swiper/css/navigation";
 export function Blogs() {
   return (
     <section id="blogs" className={styles.blogs}>
-      <h1 className="heading">our blogs</h1>
+      <div className="heading">
+        <h1 className="title">our blogs</h1>
+      </div>
       <div className={styles.blogs_slider}>
         <Swiper
           loop={true}

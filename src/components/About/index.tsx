@@ -2,11 +2,15 @@ import { boxDiv } from "./data";
 import styles from "./styles.module.css";
 // import obraVideo from "../../assets/videos/obra-video.mp4";
 import vetCare from "../../assets/videos/vetcare.mp4";
+import paw from "../../assets/images/paw.svg";
 
 export function About() {
   return (
     <section id="about" className={styles.about}>
-      <h1 className="heading">sobre nós</h1>
+      <div className="heading">
+        <img src={paw} />
+        <h1 className="title">sobre nós</h1>
+      </div>
 
       <div className={styles.row}>
         <div className={styles.video}>

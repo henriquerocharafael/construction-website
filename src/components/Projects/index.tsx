@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+import paw from "../../assets/images/paw.svg";
 
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,7 +9,10 @@ import { boxDiv } from "./data";
 export function Projects() {
   return (
     <section id="projects" className={styles.projects}>
-      <h1 className="heading">nossos projetos</h1>
+      <div className="heading">
+        <img src={paw} />
+        <h1 className="title">nossos projetos</h1>
+      </div>
 
       <div className={styles.box_container}>
         {boxDiv.map((box) => (
