@@ -5,7 +5,7 @@ import { NavBar } from "./NavBar";
 import { SearchForm } from "./SearchForm";
 //import { LoginForm } from "./LoginForm";
 import { Contact } from "../Contact";
-// import Logo from "../../assets/images/logo-topo.png";
+import Logo from "../../assets/images/logo-topo.png";
 
 import styles from "./styles.module.css";
 
@@ -60,8 +60,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <a href="#home" className={styles.logo}>
-        EA<span>Construções</span>
-        {/* <img src={Logo} /> */}
+        <img src={Logo} />
       </a>
 
       {/* Couldn't use ternary operator for component here because of screen size responsivity */}

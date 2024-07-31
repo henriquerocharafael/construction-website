@@ -1,4 +1,10 @@
 :root {
+  /* this is new color palete */
+  --orange: #d68438;
+  --yellow: #f1b24b;
+  --blue: #36846b;
+  --light-blue: #4bb39a;
+
   --light-green: #77c6a6;
   --black: #111;
   --white: #fff;
@@ -50,14 +56,14 @@ footer {
 .heading {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 
   margin-bottom: 3rem;
 }
 
 .heading img {
-  width: 45px;
-  height: 40px;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .title {
@@ -95,5 +101,10 @@ footer {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .heading img {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }

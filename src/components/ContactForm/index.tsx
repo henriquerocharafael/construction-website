@@ -82,7 +82,7 @@ export function ContactForm() {
         ></iframe>
 
         <form onSubmit={formik.handleSubmit}>
-          <h3>peça seu orçamento</h3>
+          <h3>Envie sua mensagem</h3>
           <label className={styles.label} htmlFor="name">
             {formik.touched.name && formik.errors.name
               ? formik.errors.name
@@ -92,7 +92,7 @@ export function ContactForm() {
             type="text"
             id="name"
             name="name"
-            placeholder="Nome"
+            placeholder="Nome:"
             value={formik.values.name}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -109,7 +109,7 @@ export function ContactForm() {
             type="email"
             id="email"
             name="email"
-            placeholder="Email"
+            placeholder="Email:"
             value={formik.values.email}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -126,7 +126,7 @@ export function ContactForm() {
             type="tel"
             id="phone"
             name="phone"
-            placeholder="Telefone"
+            placeholder="Telefone:"
             value={formik.values.phone}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -142,7 +142,7 @@ export function ContactForm() {
           <textarea
             id="message"
             name="message"
-            placeholder="Mensagem"
+            placeholder="Mensagem:"
             value={formik.values.message}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}

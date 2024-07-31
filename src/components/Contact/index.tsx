@@ -31,7 +31,7 @@ export function Contact({ toggleInfo }: ContactProps) {
           <FontAwesomeIcon icon={faPhone} />
         </div>
         <h3>Contato</h3>
-        <p>(19) 98821-7004</p>
+        <p>(19) 3226-7350</p>
       </div>
 
       <div className={styles.info}>
@@ -39,15 +39,15 @@ export function Contact({ toggleInfo }: ContactProps) {
           <FontAwesomeIcon icon={faEnvelope} />
         </div>
         <h3>email</h3>
-        <p>eaconstrucoes2019@gmail.com</p>
+        <p>clinicaxandaine@gmail.com</p>
       </div>
 
       <div className={styles.info}>
         <div>
           <FontAwesomeIcon icon={faMapMarkerAlt} />
         </div>
-        <h3>Escritório</h3>
-        <p>Campinas, SP - 13056400</p>
+        <h3>Clínica</h3>
+        <p>Campinas, SP - 13054-133</p>
       </div>
 
       <div className={styles.share}>
