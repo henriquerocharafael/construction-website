@@ -24,7 +24,7 @@ export function Reviews() {
   }
 
   return (
-    <section className={styles.reviews}>
+    <section id="reviews" className={styles.reviews}>
       <div className="heading">
         <img src={paw} />
         <h1 className="title">depoimentos</h1>

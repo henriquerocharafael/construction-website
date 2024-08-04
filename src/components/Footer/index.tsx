@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 import logo from "../../assets/images/logo-topo.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export function Footer() {
   return (
@@ -18,6 +18,12 @@ export function Footer() {
             </a>
             <a href="#">
               <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="#">
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
         </div>

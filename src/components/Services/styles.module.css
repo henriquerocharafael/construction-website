@@ -29,9 +29,13 @@
 }
 
 .box h3 {
-  font-size: 1.7rem;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 1.8rem;
   color: var(--black);
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding: 1rem 0;
 }
 

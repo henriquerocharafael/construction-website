@@ -68,7 +68,7 @@ export function ContactForm() {
     <section id="contact" className={styles.contact}>
       <div className="heading">
         <img src={paw} />
-        <h1 className="title" style={{ textTransform: "none" }}>
+        <h1 className="title">
           Contate-nos
         </h1>
       </div>

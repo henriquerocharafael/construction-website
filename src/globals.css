@@ -67,9 +67,13 @@ footer {
 }
 
 .title {
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+
   font-size: 3rem;
   color: var(--black);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 /* Swipper Container Projects Section */

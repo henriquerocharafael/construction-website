@@ -21,7 +21,7 @@
 }
 
 .image {
-  height: 40rem;
+  height: 25rem;
   overflow: hidden;
   border-radius: 20px 20px 0 0;
 }
@@ -62,6 +62,10 @@
 }
 
 .info h3 {
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+
   font-size: 1.7rem;
 }
 

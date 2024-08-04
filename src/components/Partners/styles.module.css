@@ -1,0 +1,9 @@
+.partners {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners img {
+  width: 15rem;
+  height: 4.688rem;
+}

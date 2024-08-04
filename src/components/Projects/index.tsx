@@ -17,7 +17,7 @@ import lgZoom from 'lightgallery/plugins/zoom';
 
 export function Projects() {
   return (
-    <section id="projects" className={styles.projects}>
+    <section id="gallery" className={styles.projects}>
       <div className="heading">
         <img src={paw} />
         <h1 className="title">galeria de fotos</h1>

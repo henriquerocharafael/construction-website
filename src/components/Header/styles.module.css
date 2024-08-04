@@ -12,10 +12,10 @@
   background: var(--white);
 }
 
-/* .logo img {
-  width: 100px;
-  height: 100px;
-} */
+.logo img {
+  width: 8.75rem;
+  height: 10rem;
+}
 
 .icons {
   display: flex;

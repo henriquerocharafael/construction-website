@@ -26,6 +26,12 @@
   position: relative;
 }
 
+.heading {
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h3 {
   font-size: 6rem;
   color: var(--black);

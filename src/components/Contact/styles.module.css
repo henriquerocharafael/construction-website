@@ -23,6 +23,10 @@
   color: var(--black);
 }
 
+.close_contact_info svg:hover {
+  color: var(--light-green);
+}
+
 .close_contact_info:hover {
   transform: rotate(90deg);
 }
@@ -51,6 +55,10 @@
 }
 
 .info h3 {
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+
   font-size: 2rem;
   color: var(--black);
   text-transform: capitalize;

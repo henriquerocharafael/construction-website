@@ -12,7 +12,9 @@ export function NavBar({ menuIsOpen }: MenuProps) {
       <a href="#home">Início</a>
       <a href="#about">Sobre</a>
       <a href="#services">Serviços</a>
-      <a href="#projects">Projetos</a>
+      <a href="#gallery">Galeria</a>
+      <a href="#reviews">Depoimentos</a>
+      <a href="#partners">Parceiros</a>
       <a href="#contact">Contato</a>
     </nav>
   );
