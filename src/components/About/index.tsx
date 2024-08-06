@@ -18,11 +18,9 @@ export function About() {
         </div>
 
         <div className={styles.content}>
-          <h3>oferecemos o melhor serviço, do básico ao acabamento</h3>
+          <h3>aqui o relato sobre nossa empresa</h3>
           <p>
-            Nossa empresa possui mais de 5 anos de atuação do ramo da construção
-            civil, período esse em que deixamos muitos clientes satisfeitos pelo
-            caminho.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni quam praesentium est modi consectetur quibusdam eaque voluptatibus voluptatum molestias sapiente obcaecati voluptates, velit dolor delectus excepturi nulla ullam corporis.
           </p>
           <a href="#services" className={styles.btn}>
             Leia mais

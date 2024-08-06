@@ -1,9 +1,18 @@
 .partners {
   display: flex;
   justify-content: space-between;
+  margin: 0 3rem;
 }
 
-.partners img {
-  width: 15rem;
-  height: 4.688rem;
+.partners h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+@media (max-width: 991px) {
+  .partners {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 }

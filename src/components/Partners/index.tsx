@@ -1,8 +1,4 @@
 import paw from "../../assets/images/paw.svg";
-import zoetis from "../../assets/images/zoetis.png";
-import vetnil from "../../assets/images/vetnil.png";
-import agener from "../../assets/images/agener.png";
-
 import styles from "./styles.module.css"
 
 export function Partners() {
@@ -15,9 +11,9 @@ export function Partners() {
 
       {/* TODO: adjust size of all images */}
       <div className={styles.partners}>
-        <img src={zoetis} />
-        <img src={vetnil} />
-        <img src={agener} />
+        <h1>parceiro 1</h1>
+        <h1>parceiro 2</h1>
+        <h1>parceiro 3</h1>
       </div>
     </section>
   )

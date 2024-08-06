@@ -35,4 +35,22 @@ export const boxDiv = [
     title: "título",
     content: "conteúdo",
   },
+  {
+    id: 7,
+    img: "../../src/assets/images/banheiro.jpg",
+    title: "título",
+    content: "conteúdo",
+  },
+  {
+    id: 8,
+    img: "../../src/assets/images/tosa.jpg",
+    title: "título",
+    content: "conteúdo",
+  },
+  {
+    id: 9,
+    img: "../../src/assets/images/espera.jpg",
+    title: "título",
+    content: "conteúdo",
+  },
 ];
